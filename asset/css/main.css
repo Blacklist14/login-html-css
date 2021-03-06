@@ -1,0 +1,116 @@
+/*
+* 1. WALLPAPER
+* 2. CONTENT
+* 3. FLEXBLILITE
+* 4. MAIN
+*   4.1 USUARIO
+*   4.2 FORM
+*   4.3 LINK
+*/
+
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+/*1. WALLPAPER*/
+main.container-wallpaper {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main.container-wallpaper .container-content {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 50vw;
+    background-color: rgba(37, 36, 36, 0.651);
+}
+/*1. END WALLPAPER*/
+
+main.container-wallpaper .container-content .content-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* 4. MAIN */
+.flex-grup-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-grup-main #icone h1 {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 1.5rem;
+}
+
+.flex-grup-main #icone img {
+    border-radius: 50%;
+}
+
+.flex-grup-main label {
+    font-weight: 600;
+    margin-left: 20px;
+}
+/*4. END MAIN */
+
+/*4.2 FORM */
+.flex-grup-main .flex-form {
+    width: 320px;
+}
+
+.flex-grup-main .form-input:required {
+    box-shadow: none;
+}
+
+.form-input,
+.form-button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+    padding: .25rem 1.1rem;
+    color: #2D2D2D;
+}
+
+.form-button {
+    background-color: #2D2D2D;
+    color: #FFF;
+    cursor: pointer;   
+}
+/*4.2 END FORM */
+
+/*4.3 LINK */
+
+.flex-link {   
+    text-align: center;
+}
+
+.flex-link a {   
+    margin-bottom: 2.5px;
+}
+
+@media (min-width: 769px) {
+    main.container-wallpaper .container-content {
+        padding: 10vw;
+    }
+}
+/*4.3 END LINK */

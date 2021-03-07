@@ -1,3 +1,13 @@
+/*
+* 1. WALLPAPER
+* 2. CONTENT
+* 3. FLEXBILITE
+* 4. MAIN
+*   4.1 USUARIO
+*   4.2 FORM
+*   4.3 LINK
+*/
+
 * {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -9,6 +19,7 @@
     box-sizing: border-box;
 }
 
+/* 1 WALLPAPER */
 main.container-wallpaper {
     height: 100vh;
     background-position: center;
@@ -21,25 +32,32 @@ main.container-wallpaper .main-container{
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.63);
 }
-.container-flex {
+/* 1 END WALLPAPER */
+
+/* 3 FLEXBILITE */
+.container-flex{
     display: flex;
-    padding-top: 15vh ;
+    padding-top: 20vh ;
     flex-direction: column;
     align-items: center;
     color: white;
     text-align: center;
 }
-
 .flex-form label{
     font-size: 20px;
     color:white;
     padding: 5px;
     border-radius: 30px;
 }
+
+.flex-form button{
+    margin-top: 30px;
+    cursor: pointer;
+}
   
 .form-input {
     font-size: 16px;
-    padding: 17px;
+    padding: 0.7rem;
     border-radius: 30px;
     width: 100%;
 
@@ -49,15 +67,12 @@ main.container-wallpaper .main-container{
     box-shadow: none;
 }
 
-.flex-form button{
-    margin-top: 20px;
-    cursor: pointer;
-}
 .form-link {
+    display: block;
     text-decoration: none;
     color: white;
-    text-align: center;
-    margin-top:10px;
+    padding-top: 30px;
+    
 }
 
 

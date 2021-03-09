@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+    /* BACKGROUND FOTO */
+.fundo{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    /* END BACKGROUND FOTO */
+
+    /* MENU */
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+
+}
+.menu ul li{
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.menu ul a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgba(185, 185, 185, 0.678);
+    border-radius: 30px;
+    padding: 5px;
+}
+    /* END MENU */
+
+    /* MAIN BARBA */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-content{
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: all 1s; 
+}
+.main-content img{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.main-content label{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+    /* END MAIN BARBA */
+
+    /* MAIN CABELO */
+.main-cabelo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.438);
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 1s;
+}
+.main-cabelo label{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.main-cabelo img{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+    /* END MAIN CABELO */
+
+    /* RESPONSIVIDADE */
+@media (min-width: 762px) {
+    .main-content,.main-cabelo{
+        flex-direction: row;
+    }
+
+    .fundo{
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+    /* END RESPONSIVIDADE */

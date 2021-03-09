@@ -37,7 +37,7 @@ main.container-wallpaper .container-content {
     height: 100vh;
     width: 100vw;
     padding-top: 20vw;
-    background-color: rgba(37, 36, 36, 0.651);
+    background-color: rgba(26, 26, 26, 0.884);
 }
 /*1. END WALLPAPER*/
 
@@ -64,6 +64,7 @@ main.container-wallpaper .container-content .content-flex {
 
 .flex-grup-main #icone img {
     border-radius: 50%;
+    object-fit:cover
 }
 
 .flex-grup-main label {
@@ -103,10 +104,13 @@ main.container-wallpaper .container-content .content-flex {
 /*4.3 LINK */
 .flex-link {   
     text-align: center;
+
 }
 
 
-.flex-link a {   
+.flex-link a {  
+    display: block; 
+    margin-top: 4px;
     margin-bottom: 2.5px;
 }
 /*4.3 END LINK */

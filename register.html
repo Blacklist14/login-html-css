@@ -18,47 +18,48 @@
 </head>
 <body>
     <main class="container-wallpaper" style="background-image: url(asset/img/pexels-photo-1895701.jpeg);">
-        <!-- CONTAINER -->
-        <div class="main-container">
-            <!-- FLEXIBILDIADE -->
-            <div class="container-flex">
-                <!-- GRUPO MAIN -->
+        <!-- CONTENT -->
+        <div class="container-content">
+            <!-- FLEXIBILITE -->
+            <div class="content-flex">
 
-                <!-- FORMULARIO -->
-                <form class="flex-form">
-                    <div>
-                        <label for="name"> Nome </label>
-                        <input class="form-input" type="name" id="name" >
-                    </div>
-                    <div>
-                        <label for="email"> E-mail </label>
-                        <input class="form-input" type="email" id="email" >
-                    </div>
-                    <div>
-                        <label for="senha"> Senha </label>
-                        <input class="form-input" type="password" id="senha" >
-                    </div>
-                    <div>
-                        <label for="senhar">Repetir senha</label>
-                        <input class="form-input" type="password" id="senhar">
-                    </div>
-                    <div >
-                      <button formaction="index.html" type="submit" class="form-input">Registrar </button>
-                    </div>
-                </form>
-                <!-- END FORMULARIO -->
+                <!-- GRUP MAIN -->
+                <div class="flex-grup-main">
 
-                <!-- LINK RETORNAR -->
-                <div>
-                    <a class="form-link" href="index.html"> Voltar </a>
+                    <!-- FORM -->
+                    <form class="flex-form" action="./index.html" method="POST">
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input class="form-input" id="email" type="text" required />
+                        </div>
+
+                        <div>
+                            <label for="passwd">Senha:</label>
+                            <input class="form-input" id="passwd" type="password" required/>
+                        </div>
+
+                        <div>
+                            <label for="passwd">Confirme sua senha:</label>
+                            <input class="form-input" id="confirPasswd" type="password" required/>
+                        </div>
+
+                        <div>
+                            <button  class="form-button" type="submit">Cadastra</button>
+                        </div>
+                    </form>
+                    <!-- END FORM -->
+
+                    <!-- LINK -->
+                    <div class="flex-link">
+                        <a href="./index.html">voltar</a>
+                    </div>
+                    <!-- END LINK -->
                 </div>
-                <!-- END LINK RETORNAR -->
-
-                <!-- EN GRUPO MAIN -->
+                <!-- END GRUP MAIN -->
             </div>
-            <!-- END FLEXIBILIDADE -->
+            <!-- END FLEXIBILITE -->
         </div>
-        <!-- END CONTAINER -->
+        <!-- CONTENT -->
     </main>
 </body>
 </html>
